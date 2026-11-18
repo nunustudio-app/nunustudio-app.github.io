@@ -39,6 +39,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>5. 알림 배우기: 이용자가 가르친 알림 형식(어느 칸이 금액·가게인지의 자리 정보)</li>
 <li>6. 신고한 알림: 이용자가 ‘잘못 잡혔어요’나 ‘결제가 맞아요’를 누른 알림. 사람 이름·카드번호·계좌번호·승인번호·전화번호·링크·메일 주소·금액이 아닌 긴 숫자를 가린 뒤 저장합니다. 금액과 낱말은 남습니다.</li>
 <li>③ 이용자가 직접 보내는 정보: 이용자가 ‘개발자에게 형식 보내기’를 누르면, 신고한 알림과 같은 규칙으로 가린 알림 글과 앱 버전, 나라·언어·통화 설정, 알림을 보낸 앱의 패키지 이름이 화면에 그대로 보이고, ‘보내기’를 눌러야 이용자의 이메일 앱이 열립니다. 이용자가 이메일 앱에서 보낸 경우에만 개발자가 그 내용과 보낸 사람 이메일 주소를 받습니다. 앱이 따로 보내는 것은 없습니다.</li>
+<li>④ ‘인식이 이상해요’: 금액·가게를 잘못 읽은 알림에서 이 버튼을 누르면, 보낼 내용이 화면에 그대로 보입니다 — 보낸 앱 이름과 패키지 이름, 알림 원문(카드·계좌·승인번호처럼 긴 숫자와 사람 이름·전화번호·링크·메일 주소는 가리고 금액은 남김, 이용자가 고치거나 지울 수 있음), 앱이 읽은 금액·가게, 받은 날짜(시각 없음), 앱 버전, 폰 언어·나라·돈 단위. ‘메일로 보내기’를 누르면 이용자의 메일 앱이 열리고, 이용자가 메일 앱에서 보낸 경우에만 개발자가 그 내용과 보낸 사람 이메일 주소를 받습니다. 앱이 따로 보내는 것은 없습니다.</li>
 </ul>
 <h2>제2조 (처리 목적)</h2>
 <ul>
@@ -63,7 +64,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>② 기록 백업 파일: 기록과 알림 원문이 들어 있습니다. 일주일에 한 번, 그리고 앱을 업데이트한 뒤 처음 켤 때 자동으로 만들어지고(‘지금 백업’을 눌러도 만들어짐), 이용자 휴대폰의 ‘문서(Documents)/Harudam’ 폴더에만 저장됩니다. 최근 4개만 남기고 오래된 것은 자동으로 지우며, 앱을 지워도 이 파일은 남으므로 필요 없으면 이용자가 직접 지워야 합니다. 이 파일은 개발자 서버로 보내지 않습니다. 안드로이드 자동 백업(구글 계정 백업)은 꺼 두었습니다.</li>
 <li>③ 구글 드라이브 백업 (선택): 이용자가 ‘구글 드라이브에도’를 고르고 구글 계정을 고른 경우에만, 위 백업 파일과 같은 내용(기록·알림 원문·영수증 사진·설정 등)을 이용자 본인의 구글 드라이브 ‘앱 전용 공간’(appDataFolder)에 저장합니다. 하루 한 번 와이파이에 연결되어 충전 중일 때, 그리고 ‘지금 백업’을 누를 때 올리며, 최근 7개만 남기고 오래된 것은 자동으로 지웁니다. 휴대폰에서 구글 서버로 암호화된 연결(HTTPS)로 바로 보내며 개발자 서버를 거치지 않고, 개발자는 이 파일을 보거나 받을 수 없습니다. 이 공간은 하루담만 읽고 쓸 수 있고, 하루담은 이용자의 다른 드라이브 파일을 보거나 바꿀 수 없습니다. 드라이브에 저장된 백업에는 구글의 서비스 약관과 개인정보처리방침이 적용됩니다.</li>
 <li>④ 신고 파일: 신고한 알림은 이용자가 ‘파일로 내보내기’를 누를 때만 파일(가린 원문)로 저장됩니다. 앱은 이 파일을 어디로도 보내지 않습니다.</li>
-<li>⑤ 이용자가 신고 파일이나 ‘개발자에게 형식 보내기’로 개발자에게 직접 보낸 내용은 알림 읽기 규칙을 고치고 답장하는 데만 쓰고, 받은 날부터 최대 1년 안에 지웁니다. 함께 받은 보낸 사람 이메일 주소도 같습니다.</li>
+<li>⑤ 이용자가 신고 파일이나 ‘개발자에게 형식 보내기’ · ‘인식이 이상해요’로 개발자에게 직접 보낸 내용은 알림 읽기 규칙을 고치고 답장하는 데만 쓰고, 받은 날부터 최대 1년 안에 지웁니다. 함께 받은 보낸 사람 이메일 주소도 같습니다.</li>
 <li>⑥ 파기 방법: 휴대폰 안의 정보는 앱의 지우기 기능이나 앱 데이터 삭제로 복구할 수 없게 지워집니다. 구글 드라이브의 백업은 제10조의 방법으로 이용자가 지웁니다. 개발자가 받은 메일은 메일함과 휴지통에서 모두 지웁니다.</li>
 </ul>
 <h2>제5조 (인터넷으로 주고받는 것)</h2>
@@ -156,7 +157,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>2026-10-22: 최초 시행</li>
 <li>2026-10-23: 운영자 변경</li>
 <li>2026-11-15: 백업 파일에 알림 원문이 들어감을 바로잡음, 보관 기간 자동 삭제 대신 ‘기록과 함께 보관’으로 바꿈, 백업 파일을 일주일에 한 번 휴대폰 ‘문서/Harudam’ 폴더에 자동 저장(최근 4개), 인터넷으로 받는 것·신고한 알림·앞으로의 식단 AI 원칙 추가</li>
-<li>2026-11-25: 이용자가 고르는 구글 드라이브 백업(본인 드라이브의 앱 전용 공간, 최근 7개) 추가</li>
+<li>2026-11-25: 이용자가 고르는 구글 드라이브 백업(본인 드라이브의 앱 전용 공간, 최근 7개) 추가, ‘인식이 이상해요’(이용자가 메일 앱에서 직접 보내는 제보) 추가</li>
 </ul>
 </section>
 <section id="en" lang="en">
@@ -183,6 +184,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>5. Notification learning: formats you taught the app (which position holds the amount or shop).</li>
 <li>6. Reported notifications: notifications on which you tapped “Caught by mistake” or “It is a payment”. Personal names, card, account and approval numbers, phone numbers, links, email addresses and long numbers other than amounts are masked before saving. Amounts and words remain.</li>
 <li>(3) Information you send us yourself: when you tap “Send format to developer”, the notification text masked by the same rules, the app version, your country, language and currency settings, and the package name of the app that sent the notification are shown on screen, and your email app opens only when you tap “Send”. We receive this, with your email address, only if you send it from your email app. The app sends nothing by itself.</li>
+<li>(4) “Something's misread”: when you tap this on a notification whose amount or shop was read wrongly, exactly what would be sent is shown on screen — the sending app's name and package name, the notification text (long numbers such as card, account and approval numbers, personal names, phone numbers, links and email addresses are masked; amounts remain; you can edit or delete it), the amount and shop the app read, the date received (no time), the app version, and the phone language, country and currency. Tapping “Send by email” opens your email app, and we receive the content, with your email address, only if you send it from there. The app sends nothing by itself.</li>
 </ul>
 <h2>2. Purposes</h2>
 <ul>
@@ -207,7 +209,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>(2) Backup file: it contains your records, including notification text. It is created automatically once a week and on the first start after an app update (and when you tap “Back up now”), and is saved only in the “Documents/Harudam” folder on your phone. Only the newest four are kept; older ones are deleted automatically. The files stay on the phone even if you uninstall the app, so delete them yourself if you no longer need them. They are never sent to the developer. Android auto backup (Google account backup) is turned off.</li>
 <li>(3) Google Drive backup (optional): only if you choose “Also Google Drive” and pick a Google account, the same content as the backup file above (records, notification text, receipt photos, settings, etc.) is saved in the app's private folder (appDataFolder) in your own Google Drive. It is uploaded once a day while the phone is on Wi-Fi and charging, and when you tap “Back up now”; only the newest seven are kept and older ones are deleted automatically. It goes straight from your phone to Google over an encrypted connection (HTTPS), never through our servers, and we cannot see or receive it. Only Harudam can read and write this folder, and Harudam cannot see or change your other Drive files. Google's Terms of Service and Privacy Policy apply to backups stored in Drive.</li>
 <li>(4) Report file: reported notifications are saved to a file (masked text) only when you tap “Export to a file”. The app does not send this file anywhere.</li>
-<li>(5) Anything you send us yourself, as a report file or with “Send format to developer”, is used only to improve the notification-reading rules and to reply to you, and is deleted within one year of receipt, together with the sender's email address.</li>
+<li>(5) Anything you send us yourself, as a report file or with “Send format to developer” or “Something's misread”, is used only to improve the notification-reading rules and to reply to you, and is deleted within one year of receipt, together with the sender's email address.</li>
 <li>(6) How data is deleted: data on your phone is deleted beyond recovery by the app's delete functions or by clearing the app's data. You delete Google Drive backups yourself as described in section 10. Emails we receive are deleted from both the inbox and the trash.</li>
 </ul>
 <h2>5. What the app sends and receives</h2>
@@ -291,7 +293,7 @@ ul{padding-left:20px}li{margin:6px 0}
 <li>2026-10-22: First version</li>
 <li>2026-10-23: Operator changed</li>
 <li>2026-11-15: Corrected that backup files include notification text; replaced automatic deletion after a retention period with “kept with its record”; backup files saved automatically once a week to the phone's “Documents/Harudam” folder (newest four kept); added downloads, reported notifications and principles for a future meal AI</li>
-<li>2026-11-25: Added the optional Google Drive backup (the app's private folder in your own Drive, newest seven kept)</li>
+<li>2026-11-25: Added the optional Google Drive backup (the app's private folder in your own Drive, newest seven kept) and “Something's misread” (reports you send yourself from your email app)</li>
 </ul>
 </section>
 </main></body>
