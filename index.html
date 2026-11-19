@@ -4,8 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>누누스튜디오 · Nunu Studio</title>
-<meta name="description" content="누누스튜디오(Nunu Studio)는 생활에 바로 쓰이는 작고 단정한 앱을 만드는 1인 개발 스튜디오입니다. 가계부 앱 하루담(Harudam).">
+<meta name="description" content="누누스튜디오(Nunu Studio)는 생활에 바로 쓰이는 작고 단정한 앱을 만드는 1인 개발 스튜디오입니다. 하루담(Harudam) — 오늘 얼마 썼지? 알림만 켜면 바로 보여주는 가계부.">
 <link rel="stylesheet" href="style.css">
+<style>
+.strengths{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:16px 0;padding:0;list-style:none}
+.strengths li{border:1px solid #DEDBD0;border-radius:14px;padding:14px 16px;background:#FFFDF8}
+.strengths b{display:block;color:#2F5A2B;margin-bottom:4px}
+.shots{display:flex;gap:12px;overflow-x:auto;padding:4px 0 12px;margin:12px 0}
+.shots img{width:200px;height:auto;border-radius:12px;border:1px solid #DEDBD0;flex:0 0 auto}
+.play{display:inline-block;margin:8px 0 4px;padding:10px 18px;border-radius:999px;background:#E8F1E1;color:#2F5A2B;font-weight:700}
+</style>
 </head>
 <body>
 <header><a class="brand" href="./"><svg class="leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M5,19C5,11 10,5.5 19,5C19.5,13.5 14,19 6,19Z" fill="#3F7139" fill-opacity=".2"/><path d="M5,19C5,11 10,5.5 19,5C19.5,13.5 14,19 6,19M5,19L13,11" fill="none" stroke="#3F7139" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span>누누스튜디오 · Nunu Studio</span></a>
@@ -16,11 +24,24 @@
 <h1>누누스튜디오</h1>
 <p class="lead">생활에 바로 쓰이는 작고 단정한 앱을 만드는 1인 개발 스튜디오예요. 매일 손이 가는 기록 앱을 만들고, 개인정보는 되도록 휴대폰 밖으로 내보내지 않는 방식으로 설계해요.</p>
 <h2 id="harudam">하루담 (Harudam) <span class="tag">안드로이드 · 출시 준비 중</span></h2>
-<p>남은 시간과 쓴 돈을 눈으로 보며 아껴 쓰는 가계부예요. 결제 알림이 오면 자동으로 모이고, 내가 정리한 것만 합계에 들어가요.</p>
+<p><b>오늘 얼마 썼지? 알림만 켜면 바로 보여주는 가계부</b>예요. 결제 알림이 오면 모이고, 내가 정리한 것만 합계에 들어가요.</p>
+<ul class="strengths">
+<li><b>① 위젯만 봐도 1초</b>홈 화면 위젯에서 오늘 나간 돈과 남은 시간을 바로 봐요.</li>
+<li><b>② 로그인 · 계좌 연결 없이</b>내 기록은 내 폰에 있어요. 원하면 내 구글 드라이브에 자동 백업해요.</li>
+<li><b>③ 내가 정리해요</b>앱이 마음대로 판단하지 않아요. 모인 알림은 버튼 한 번으로 직접 정리해요.</li>
+</ul>
+<div class="shots">
+<img src="harudam/ko-01-widget.jpg" width="540" height="960" loading="lazy" alt="홈 화면 위젯: 오늘 나간 돈과 남은 시간">
+<img src="harudam/ko-03-sort.jpg" width="540" height="960" loading="lazy" alt="정리할 알림: 알림 원문과 들어온 돈 · 나간 돈 · 삭제 버튼">
+<img src="harudam/ko-04-dup.jpg" width="540" height="960" loading="lazy" alt="같은 결제 확인: 1건으로 할지 따로 둘지 고르는 창">
+<img src="harudam/ko-05-calendar.jpg" width="540" height="960" loading="lazy" alt="달력: 날마다 나간 돈과 무지출 도장">
+</div>
+<p><!-- PLAY_LINK_KO: 출시 후 <a class="play" href="https://play.google.com/store/apps/details?id=com.nunustudio.harudam">Google Play에서 받기</a> 로 바꿈 --><span class="play">Google Play · 출시 준비 중</span></p>
 <ul>
 <li><b>타임아웃</b> — 오늘 · 이번 주 · 이번 달의 남은 시간과 나간 돈을 가장 크게 보여 줘요. 여행 · 월급날까지 · 무지출 도전처럼 기간을 따로 정할 수도 있어요.</li>
 <li><b>정리할 알림</b> — 은행 · 카드 · 결제 앱에서 온 금액 알림이 원문 그대로 모여요. 하나씩 [들어온 돈] [나간 돈] [삭제]로 정리해요. 앱이 대신 판단해 넣지 않아요.</li>
-<li><b>통계</b> — 날 · 주 · 달 · 기간별 나간 돈, 목적별 · 가게별 · 카드별 합계. 합계는 기록과 원 단위까지 같아요.</li>
+<li><b>같은 결제 알림 확인</b> — 같은 결제가 카드 앱 · 문자 · 메일로 겹쳐 오면 알려 줘요. 1건으로 할지 따로 둘지는 직접 골라요.</li>
+<li><b>무지출 달력 · 통계 · 검색</b> — 안 쓴 날엔 달력에 도장. 날 · 주 · 달 · 기간별 나간 돈과 목적별 · 가게별 · 카드별 합계를 보고, 가게 · 메모 · 금액으로 기록을 찾아요.</li>
 <li><b>홈 화면 위젯</b> — 오늘 나간 돈과 남은 시간, 정리할 알림 건수를 한눈에. 크기에 따라 모양이 바뀌고 배경은 투명 · 반투명 · 불투명 중에서 골라요.</li>
 <li><b>자동 백업</b> — 일주일에 한 번 휴대폰의 ‘문서/Harudam’ 폴더에 백업 파일을 저장해요(최근 4개). ‘구글 드라이브에도’를 고르면 본인 구글 드라이브의 앱 전용 공간에도 하루 한 번 저장해요. 누누스튜디오 서버로는 보내지 않아요.</li>
 <li><b>계좌 연결 · 로그인 없음</b> — 은행 계좌를 연결하지 않고 회원가입도 없어요. 기록과 알림은 휴대폰 안에만 있어요.</li>
@@ -40,11 +61,24 @@
 <h1>Nunu Studio</h1>
 <p class="lead">Nunu Studio is an independent studio that makes small, tidy apps for everyday life. We build apps you reach for every day, designed to keep your personal data on your phone whenever possible.</p>
 <h2>Harudam (하루담) <span class="tag">Android · coming soon</span></h2>
-<p>A money diary that shows the time left and the money spent, so you can spend with care. Payment notifications are collected automatically, and only what you sort goes into your totals.</p>
+<p><b>How much did I spend today? Turn on notifications and see it right away.</b> Payment notifications are gathered for you, and only what you sort goes into your totals.</p>
+<ul class="strengths">
+<li><b>① One glance at the widget</b>See today's spending and the time left right on your home screen.</li>
+<li><b>② No login, no bank linking</b>Your records stay on your phone, with optional automatic backup to your own Google Drive.</li>
+<li><b>③ You do the sorting</b>The app doesn't decide for you. You sort each notification with one tap.</li>
+</ul>
+<div class="shots">
+<img src="harudam/en-01-widget.jpg" width="540" height="960" loading="lazy" alt="Home screen widget: today's spending and time left">
+<img src="harudam/en-03-sort.jpg" width="540" height="960" loading="lazy" alt="To sort: the notification text with Money in, Money out or Delete">
+<img src="harudam/en-04-dup.jpg" width="540" height="960" loading="lazy" alt="Same-payment check: choose one payment or separate">
+<img src="harudam/en-05-calendar.jpg" width="540" height="960" loading="lazy" alt="Calendar: daily spending with no-spend stamps">
+</div>
+<p><!-- PLAY_LINK_EN: after launch, replace with <a class="play" href="https://play.google.com/store/apps/details?id=com.nunustudio.harudam">Get it on Google Play</a> --><span class="play">Google Play · coming soon</span></p>
 <ul>
 <li><b>Timeout</b> — the time left and the money out for today, this week and this month, shown largest. You can also set your own periods, such as a trip, until payday or a no-spend challenge.</li>
 <li><b>To sort</b> — notifications with an amount from banks, cards and payment apps are kept exactly as they arrived. Sort each one with [Money in] [Money out] [Delete]. The app never decides for you.</li>
-<li><b>Stats</b> — money out by day, week, month or any period, with totals by category, store and card that match your records to the last unit.</li>
+<li><b>Same-payment check</b> — when one payment arrives through a card app, a text and an email, Harudam points it out. You choose whether it is one payment or separate ones.</li>
+<li><b>No-spend calendar, stats, search</b> — a stamp on the calendar for every no-spend day. See money out by day, week, month or any period with totals by category, store and card, and find records by store, note or amount.</li>
 <li><b>Home-screen widget</b> — today's money out, the time left and how many notices are left to sort, at a glance. Its layout follows its size, with a clear, translucent or solid background.</li>
 <li><b>Automatic backup</b> — once a week a backup file is saved to the phone's “Documents/Harudam” folder (latest 4). Choose “Also Google Drive” to also save one a day to the app's private folder in your own Google Drive. Nothing goes to Nunu Studio's servers.</li>
 <li><b>No bank linking, no login</b> — no bank account connection and no sign-up. Your records and notifications stay on your phone.</li>
